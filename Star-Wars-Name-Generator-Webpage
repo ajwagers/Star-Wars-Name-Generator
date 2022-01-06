@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0062)http://observe.phy.sfasu.edu/~awagers/code/scripts/SWName.html -->
+<HTML><HEAD><TITLE>Star Wars Name Generator</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<SCRIPT language=Javascript>
+<!-- hide this from old browsers
+function getname(form) {
+	var lastname = document.infoform.lname.value
+	var firstname = document.infoform.fname.value
+	var Maidenname = document.infoform.mmname.value
+	var Birthplace = document.infoform.pobirth.value
+
+	var nfname = lastname.substring(0,3) + firstname.substring(0,2).toLowerCase()
+	var nlname = Maidenname.substring(0,2) + Birthplace.substring(0,3).toLowerCase()
+	newname.style.fontSize = 24
+	newname.innerHTML = nfname + " " + nlname
+	
+}
+-->
+</SCRIPT>
+</HEAD>
+<BODY bgColor=#ffffff>
+<H3 align=center>Star Wars Name Generator</H3>This page will take some of your 
+personal information and create your name as it would appear in the Star Wars 
+Universe.<BR>
+<P>
+<FORM name=infoform>
+<TABLE>
+<hr>
+<tr><td>First Name: </td><td><INPUT size=15 value=Luke name=fname></td></tr>
+<tr><td>Last Name:  </td><td><INPUT size=15 value=Skywalker name=lname></td></tr>
+<tr><td>Mother's Maiden Name: </td><td><INPUT size=15 value=Amidala name=mmname></td></tr>
+<tr><td>Place of Birth: </td><td><INPUT size=15 value=Tatooine name=pobirth></td></tr>
+<tr><td></td><td><INPUT onclick=getname(this.infoform) type=button value="Get Name"></td></tr> 
+</FORM>
+</TABLE>
+<SCRIPT type=text/javascript>
+var asdf = "Your name is "
+document.write(asdf)
+</SCRIPT>
+<SPAN id=newname>????</SPAN>. 
+<HR>
+<br>
+<P><SMALL><EM>Last modified 9th August 2004</EM></SMALL> <BR><SMALL><EM>This is 
+in no way sanctioned by Lucasfilm and is used without permission.</EM></SMALL> 
+<BR></P></BODY></HTML>
